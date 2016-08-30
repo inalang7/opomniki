@@ -1,5 +1,12 @@
 window.addEventListener('load', function() {
 	//stran nalozena
+	var pridobijIme = function() {
+		var uporabnik = document.querySelector("#uporabnisko_ime").value;
+		document.querySelector("#uporabnik").innerHTML = uporabnik;
+		document.querySelector(".pokrivalo").style.visibility="hidden";
+		
+	};
+	document.querySelector("#prijavniGumb").addEventListener('click', pridobijIme);
 		
 	//Posodobi opomnike
 	var posodobiOpomnike = function() {
